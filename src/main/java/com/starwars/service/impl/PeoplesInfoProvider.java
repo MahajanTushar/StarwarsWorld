@@ -29,17 +29,6 @@ public class PeoplesInfoProvider extends BaseProvider{
             });
         }
 
-//        else {
-//            people = peopleList.stream().skip(id - 1).limit(id).findAny().get();
-//            if (ObjectUtils.isEmpty(people)) {
-//                people = webClient.get().uri("/api/people").retrieve().bodyToMono(People.class).block();
-//
-//                peopleList.add(people);
-//                cacheManager.getCache("people").put("people", peopleList);
-//            }
-//
-//        }
-//        return people;
         return Mono.just(null);
     }
 
