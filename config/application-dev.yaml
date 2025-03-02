@@ -1,0 +1,6 @@
+base:
+  url: https://swapi.dev/api/
+
+logging:
+  level:
+    root: debug
